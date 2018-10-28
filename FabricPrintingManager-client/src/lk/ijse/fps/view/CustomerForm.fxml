@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="739.0" style="-fx-background-color: #a0a0a1;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fps.controller.CustomerFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/fps/styles/customerform.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtCFName" labelFloat="true" layoutX="51.0" layoutY="153.0" prefHeight="25.0" prefWidth="455.0" promptText="First Name" unFocusColor="#1e16ae">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCLName" labelFloat="true" layoutX="50.0" layoutY="204.0" prefHeight="25.0" prefWidth="455.0" promptText="Last Name" unFocusColor="#160f96">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCCompany" labelFloat="true" layoutX="50.0" layoutY="253.0" prefHeight="25.0" prefWidth="455.0" promptText="Company" unFocusColor="#17109d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtTelNo" labelFloat="true" layoutX="49.0" layoutY="309.0" prefHeight="25.0" prefWidth="455.0" promptText="Telphone no." unFocusColor="#17109d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="51.0" layoutY="360.0" prefHeight="25.0" prefWidth="455.0" promptText="E-Mail" unFocusColor="#17109d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblOrders" layoutX="10.0" layoutY="418.0" onMouseClicked="#setTabelData" prefHeight="230.0" prefWidth="729.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="140.0" text=" First Name" />
+            <TableColumn prefWidth="102.0" text="Last Name" />
+            <TableColumn prefWidth="75.0" text="Company" />
+            <TableColumn prefWidth="75.0" text="Telephone Number" />
+            <TableColumn prefWidth="75.0" text="E-Mail" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="595.0" layoutY="166.0" onAction="#onAdd" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #2628a7;" text="Add" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelet" layoutX="595.0" layoutY="252.0" onAction="#onDelet" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #b52121;" text="Delet" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="595.0" layoutY="345.0" onAction="#onUpdate" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #0f8c20;" text="Update" textFill="#fcfffc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="101.0" fitWidth="200.0" layoutX="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Iconic_e062(0)_128.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="265.0" layoutY="74.0" prefHeight="17.0" prefWidth="129.0" text="Customer Form" textFill="#1e199a">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

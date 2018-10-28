@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="452.0" style="-fx-background-color: #4a4861;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fps.controller.LoginFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/fps/styles/loginform.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtId" layoutX="78.0" layoutY="130.0" prefHeight="25.0" prefWidth="300.0" promptText="ID number" style="-fx-text-fill: #fff;" unFocusColor="#070707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUsername" layoutX="78.0" layoutY="189.0" prefHeight="25.0" prefWidth="300.0" promptText="User Name" style="-fx-text-fill: #fff;" unFocusColor="#070707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" layoutX="78.0" layoutY="246.0" prefHeight="25.0" prefWidth="300.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="56.0" fitWidth="90.0" layoutX="185.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Entypo_d83d(0)_32.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="184.0" layoutY="72.0" prefHeight="17.0" prefWidth="120.0" text="Login" textFill="#1a1a1b">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="246.0" layoutY="329.0" onAction="#lblLogin" prefHeight="43.0" prefWidth="85.0" style="-fx-background-color: #0dbb45;" text="Login" textFill="WHITE" />
+      <JFXButton layoutX="346.0" layoutY="328.0" onAction="#lblCreateNew" prefHeight="43.0" prefWidth="85.0" style="-fx-background-color: #0dbb45;" text="Create New" textFill="WHITE" />
+   </children>
+</AnchorPane>

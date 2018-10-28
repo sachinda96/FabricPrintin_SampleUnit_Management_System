@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="422.0" prefWidth="625.0" style="-fx-background-color: #000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fps.controller.CreateAccountController">
+    <stylesheets>
+        <URL value="@/lk/ijse/fps/styles/createaccount.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="172.0" layoutY="27.0" prefHeight="379.0" prefWidth="444.0" style="-fx-background-color: #5d618c;" textFill="#5d618c" />
+      <JFXTextField fx:id="txtId" focusColor="#f7f7f8" labelFloat="true" layoutX="198.0" layoutY="81.0" prefHeight="25.0" prefWidth="398.0" promptText="Company ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUserName" focusColor="#f7f7f8" labelFloat="true" layoutX="197.0" layoutY="125.0" prefHeight="25.0" prefWidth="398.0" promptText="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" focusColor="#f7f7f8" labelFloat="true" layoutX="200.0" layoutY="170.0" prefHeight="25.0" prefWidth="398.0" promptText="Passowrd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="crateOnAction" layoutX="399.0" layoutY="336.0" onAction="#crateOnAction" prefHeight="43.0" prefWidth="86.0" style="-fx-background-color: #048650;" text="Create" textFill="#f2f2f2" />
+      <JFXComboBox fx:id="cmbUnit" layoutX="197.0" layoutY="228.0" prefHeight="25.0" prefWidth="398.0" />
+      <ImageView fitHeight="150.0" fitWidth="131.0" layoutX="23.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/et-line_e040(0)_128.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="225.0" prefHeight="28.0" prefWidth="112.0" text="Create Account" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

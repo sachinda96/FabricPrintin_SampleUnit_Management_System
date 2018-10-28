@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FabricPrintingOrderUnit-client.jnlp">
+  <information>
+    <title>FabricPrintingOrderUnit-client</title>
+    <vendor>Sachinda Nipun</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FabricPrintingOrderUnit-client.jar" size="47640" download="eager" />
+    <jar href="lib\FabricPrintSample_-_Common.jar" size="42656" download="eager" />
+    <jar href="lib\ijse-jasper-reports-util-by-sb.jar" size="9232819" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2383838" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FabricPrintingOrderUnit-client" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="lk.ijse.fps.core.BduOrderMain"  name="FabricPrintingOrderUnit-client" />
+  <update check="always"/>
+</jnlp>

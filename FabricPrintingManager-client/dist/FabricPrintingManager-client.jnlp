@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FabricPrintingManager-client.jnlp">
+  <information>
+    <title>FabricPrintingManager-client</title>
+    <vendor>Sachinda Nipun</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FabricPrintingManager-client.jar" size="15728193" download="eager" />
+    <jar href="lib\FabricPrintSample_-_Common.jar" size="42656" download="eager" />
+    <jar href="lib\ijse-jasper-reports-util-by-sb.jar" size="9232819" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2383838" download="eager" />
+    <jar href="lib\swingx-all-1.6.4.jar" size="1487304" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FabricPrintingManager-client" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="lk.ijse.fps.core.MainForm"  name="FabricPrintingManager-client" />
+  <update check="always"/>
+</jnlp>

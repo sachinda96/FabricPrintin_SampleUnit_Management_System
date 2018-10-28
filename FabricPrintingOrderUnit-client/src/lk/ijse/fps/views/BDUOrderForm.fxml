@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleRole="IMAGE_VIEW" focusTraversable="true" prefHeight="748.0" prefWidth="1184.0" style="-fx-background-color: #fff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fps.controller.BDUOrderFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/fps/styles/bduorderform.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="42.0" layoutY="120.0" prefHeight="348.0" prefWidth="414.0" style="-fx-border-width: 1; -fx-border: #000; -fx-border-style: solid;" />
+      <Label layoutX="461.0" layoutY="119.0" prefHeight="348.0" prefWidth="360.0" style="-fx-border-width: 1; -fx-border: #000; -fx-border-style: solid;" />
+      <JFXDatePicker fx:id="txtDate" defaultColor="#2f1c79" layoutX="64.0" layoutY="293.0" prefHeight="25.0" prefWidth="341.0" promptText="Order Date" style="-fx-text-fill: #fff; -fx-font-weight: bold; -fx-font-size: 14;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect></JFXDatePicker>
+      <JFXTextField fx:id="txtOrderQty" focusColor="#392020" labelFloat="true" layoutX="60.0" layoutY="353.0" onAction="#oQty" prefHeight="25.0" prefWidth="330.0" promptText="Order Qty" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <JFXDatePicker fx:id="txtDeliveryDate" defaultColor="#2f1c79" layoutX="60.0" layoutY="406.0" prefHeight="25.0" prefWidth="330.0" promptText="Delivery Date" style="-fx-font-weight: bold; -fx-font-size: 14;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect></JFXDatePicker>
+      <JFXTextField fx:id="txtFabricName" focusColor="#3216d0" labelFloat="true" layoutX="476.0" layoutY="140.0" onAction="#FabName" prefHeight="28.0" prefWidth="330.0" promptText="Fabric Name" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFabricIdQty" focusColor="#3216d0" labelFloat="true" layoutX="476.0" layoutY="194.0" onAction="#fabQty" prefHeight="28.0" prefWidth="330.0" promptText="Fabric QTY" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDesignNumber" focusColor="#3216d0" labelFloat="true" layoutX="476.0" layoutY="244.0" onAction="#fabDNumber" prefHeight="28.0" prefWidth="330.0" promptText="Design Number" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDesignName" focusColor="#3216d0" labelFloat="true" layoutX="476.0" layoutY="296.0" onAction="#Dname" prefHeight="28.0" prefWidth="330.0" promptText="Design Name" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDesignType" focusColor="#3216d0" labelFloat="true" layoutX="479.0" layoutY="352.0" onAction="#Dtype" prefHeight="28.0" prefWidth="330.0" promptText="Design Type" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOrderPrice" focusColor="#3216d0" labelFloat="true" layoutX="480.0" layoutY="407.0" onAction="#setPrice" prefHeight="25.0" prefWidth="330.0" promptText="Price" style="-fx-text-fill: #000;" unFocusColor="#1d1d9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#3815e4" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <Label layoutX="840.0" layoutY="112.0" prefHeight="319.0" prefWidth="330.0" style="-fx-border-width: 1; -fx-border: #000; -fx-border-style: solid;" />
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="955.0" layoutY="234.0" onAction="#OnPlaceOrder" prefHeight="41.0" prefWidth="187.0" ripplerFill="#ad0c1e" styleClass="placeOrderButton" stylesheets="@../styles/bduorderform.css" text="Place Order" textFill="#f5efef">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="18.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="14.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="18.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="14.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="417.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="18.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="417.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="425.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="425.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="28.0" fitWidth="42.0" layoutX="425.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tblOrder" layoutX="81.0" layoutY="479.0" prefHeight="222.0" prefWidth="1052.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Customer Name" />
+            <TableColumn prefWidth="75.0" text="OrderQty" />
+            <TableColumn prefWidth="75.0" text="Fabric Name" />
+            <TableColumn prefWidth="75.0" text="FabricQty" />
+            <TableColumn prefWidth="75.0" text="Design Name" />
+            <TableColumn prefWidth="75.0" text="Design Type" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="txtTotalOrder" editable="false" focusColor="#fdfdff" labelFloat="true" layoutX="930.0" layoutY="179.0" prefHeight="25.0" prefWidth="236.0" promptText="Total" unFocusColor="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#1127b5" />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXTextField>
+      <Label fx:id="inOrderQty" layoutX="296.0" layoutY="357.0" prefHeight="17.0" prefWidth="109.0" text="* Invalid Input" textFill="#d30e0e" />
+      <Label fx:id="inFabName" layoutX="697.0" layoutY="129.0" prefHeight="17.0" prefWidth="109.0" text="* Invalid Input" textFill="#d30e0e" />
+      <Label fx:id="infabqty" layoutX="701.0" layoutY="183.0" prefHeight="17.0" prefWidth="109.0" text="* Invalid Input" textFill="#d30e0e" />
+      <Label fx:id="indnme" layoutX="717.0" layoutY="296.0" prefHeight="17.0" prefWidth="109.0" text="* Invalid Input" textFill="#d30e0e" />
+      <Label fx:id="indTyp" layoutX="717.0" layoutY="358.0" prefHeight="17.0" prefWidth="109.0" text="* Invalid Input" textFill="#d30e0e" />
+      <Label fx:id="inpr" layoutX="717.0" layoutY="413.0" prefHeight="17.0" prefWidth="109.0" text="* Invalid Input" textFill="#d30e0e" />
+      <Label layoutX="840.0" layoutY="113.0" prefHeight="173.0" prefWidth="89.0" style="-fx-background-color: #898787;" text="Total...." textFill="SNOW">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="840.0" layoutY="287.0" prefHeight="143.0" prefWidth="330.0" style="-fx-background-color: #2dacc9;" textFill="#2dacc9" />
+      <JFXProgressBar fx:id="prograss" layoutX="852.0" layoutY="319.0" prefHeight="28.0" prefWidth="304.0" />
+      <Label fx:id="lblSetComplet" layoutX="851.0" layoutY="281.0" prefHeight="25.0" prefWidth="165.0" textFill="#a41313">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCustomers" focusColor="#161717" layoutX="206.0" layoutY="155.0" onAction="#setCustomers" prefHeight="25.0" prefWidth="204.0" unFocusColor="#1e1cab" />
+      <JFXButton fx:id="btnNewCustomer" layoutX="282.0" layoutY="217.0" onAction="#NewCustomerOnAction" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: #0cb818;" text="Add New Customer" textFill="WHITE" />
+      <Label layoutX="64.0" layoutY="163.0" prefHeight="28.0" prefWidth="151.0" text="Customer Name" textFill="#141d86">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="-1.0" prefHeight="75.0" prefWidth="1188.0" style="-fx-background-color: #615f5f;" textFill="#615f5f" />
+      <Label layoutX="-3.0" layoutY="56.0" prefHeight="692.0" prefWidth="42.0" style="-fx-background-color: #615f5f;" />
+      <ImageView fitHeight="65.0" fitWidth="89.0" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lk.ijse.fps.img.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="91.0" layoutY="21.0" prefHeight="35.0" prefWidth="204.0" style="-fx-text-fill: #29c226;" text="BDU Orders" textFill="#29c226">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDID" layoutX="701.0" layoutY="246.0" prefHeight="17.0" prefWidth="109.0" text="* this id is available" textFill="#d30e0e" />
+      <Label layoutX="1084.0" layoutY="6.0" onDragDetected="#btnLogOut" prefHeight="52.0" prefWidth="89.0" text="Log Out" textFill="#f2eded">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
